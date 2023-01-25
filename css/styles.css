@@ -41,10 +41,20 @@ ul {
     padding: 0px;
 }
 
-.container {
+/* .container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
+} */
+
+.container {
+    width: 1128px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
 
 .link {
@@ -60,13 +70,21 @@ ul {
    color: var(--dark-navy-blue);
 }
 
-.list {
-     list-style: none;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* -------------------------
             Studio. Header
 ----------------------------*/
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--accent-cornflower);
+}
+
 .header-logo {
     font-family: 'Raleway';
         font-style: normal;
@@ -109,19 +127,17 @@ ul {
 .header-contact:focus {
     color: var(--pressed-stete-ocean);
 }
-.header-logo {
-    display: flex;
-}
 
 .header-container {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-navigation {
     display: flex;
-    margin-right: 332px;
+    margin-right: auto;
+    /* margin-right: 332px; */
 }
 
 .header-list {
@@ -130,7 +146,9 @@ ul {
 
 
 .header-list-contact {
-    display: flex;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-logo {
@@ -152,6 +170,8 @@ ul {
 .header-item-contact:last-child {
     margin-right: 0;
 }
+
+
 /* -------------------------
             Hero 
 ----------------------------*/
@@ -271,6 +291,11 @@ ul {
 /* -------------------------
             Main
 ----------------------------*/
+.main {
+    background-color: var(--light-cloud );
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .main-title {
         font-weight: 700;
@@ -321,9 +346,10 @@ ul {
     padding-bottom: 32px;
 }
 
-.main-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.main-item {
+    background-color: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
 }
 
 /* -------------------------
@@ -331,6 +357,8 @@ ul {
 ----------------------------*/
 .footer {
     background: var(--dark-navy-blue);
+    padding-top: 100px;
+        padding-bottom: 100px;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -355,11 +383,7 @@ ul {
         letter-spacing: 0.02em;
         color: var(--accent-cornflower);
 }
-
-.footer-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+ 
 
 .footer-logo {
     margin-bottom: 16px;
@@ -394,21 +418,25 @@ ul {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding: 12px 24px;
+            padding: 11px 23px;
             background: var(--light-cloud);
             border: 1px solid var(--accent-cornflower);
             border-radius: 4px;
+            min-height: 48px;
 }
 
 .main-btn-portfolio:hover,
 .main-btn-portfolio:focus {
         background-color: var(--pressed-stete-ocean);
         color: #FFFFFF;
+        border: 1px solid var(--pressed-stete-ocean);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-list-portfolio {
     display: flex;
     justify-content: center;
+    margin-bottom: 72px;
 }
 
 .main-item-portfolio {
@@ -440,5 +468,50 @@ ul {
 .hero-list-portfolio {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    margin-top: -48px;
+    margin-left: -24px;
 }
+
+.hero-item-portfolio {
+    flex-basis: calc(100% / 3 - 24px);
+    margin-top: 48px;
+    margin-left: 24px;
+}
+.portfolio-text {
+    border: 1px solid var(--accent-cornflower);
+}
+.portfolio-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.hero-subtitle-portfolio {
+    margin-bottom: 8px;
+}
+
+.main-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+/* 
+.hero-list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-item-portfolio {
+    margin-right: 24px;
+}
+
+.hero-item-portfolio:nth-child(3n) {
+    margin-right: 0px;
+} 
+
+.hero-item-portfolio {
+    margin-bottom: 48px;
+}
+
+.hero-item-portfolio:nth-last-child(-n+3) {
+    margin-bottom: 0;
+} */
